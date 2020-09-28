@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="regform.css">
+    <title>Website</title>
+</head>
+
+<body>
+    <header>Welcome to our website</header>
+    <h1>Bio Data</h1>
+    <h2>Registration form</h2>
+    <p>Please enter the details below correctly</p>
+    <h1>Personal Details</h1>
+    <hr width="100%">
+
+    <form action="/info" method="POST">
+
+        <label for="Full-name">Full Name:</label>
+        <input type="text" name="fullName" placeholder="xyz" required>
+
+        </br>
+
+
+        <label for="gotra">Gotra</label>
+        <input type="text" name="gotra" placeholder="Enter your Gotra" required>
+
+        </br>
+
+
+        <label for="Marital Status ">Marital Status :</label>
+        <input type="radio" name="status-choice" value=choice-1>
+        <label for="status">Unmarried</label>
+        <input type="radio" name="status-choice" value=choice-2>
+        <label for="status">Divorce</label>
+        <input type="radio" name="status-choice" value=choice-3>
+        <label for="status">Widow</label><br>
+
+
+
+        </br>
+
+        <label for="birthday">Date of Birth :</label>
+        <input type="date" id="birthday" name="birthday" required><br>
+        </br>
+
+        <label for="appt">Time of Birth :</label>
+        <input type="time" id="appt" name="appt"><br>
+        </br>
+
+        <label for="birth place">Place of Birth </label>
+        <input type="text" name="place" placeholder="required">
+        </br>
+
+        <label for="physical status">Physical Status </label>
+        <input type="text" name="physical status" placeholder="Normal/Other" required>
+        </br>
+
+
+        <label for="gender">Gender :</label>
+
+        <input type="radio" name="gender-choice" value=choice-1>
+        <label for="gender-male">Male</label>
+
+        <input type="radio" name="gender-choice" value=choice-2>
+        <label for="gender-female">Female</label>
+
+        <input type="radio" name="gender-choice" value=choice-3>
+        <label for="gender-others">Others</label><br>
+
+
+        </br>
+
+
+        <label for="dosh">Dosh :</label>
+
+        <input type="radio" name="dosh-choice" value="choice-1">
+        <label for="dosh-manglik">Manglik</label>
+
+        <input type="radio" name="dosh-choice" value="choice-2">
+        <label for="dosh-nonmanglik">Non-Manglik</label>
+
+        <input type="radio" name="dosh-choice" value="choice-3">
+        <label for="dosh-anshikmanglik">Anshik Manglik</label><br>
+
+
+        </br>
+
+
+        <label for="Height">Height </label>
+        <input type="text" name="Height" placeholder="__feet__inch">
+
+        </br>
+
+
+        <label for="weight">Weight </label>
+        <input type="text" name="weight" placeholder="Enter weight in Kgs">
+
+        <br>
+
+
+        <label for="complexion">Complexion :</label>
+
+        <input type="radio" name="Complexion-choice" value="choice-1">
+        <label for="Complexion-veryfair">Very Fair</label>
+
+        <input type="radio" name="Complexion-choice" value="choice-2">
+        <label for="Complexion-fair">Fair</label>
+
+        <input type="radio" name="Complexion-choice" value="choice-3">
+        <label for="Complexion-wheatish">Wheatish</label><br>
+
+        </br>
+
+
+        <label for="education">Education</label>
+        <input type="text" name="Education" placeholder="Enter Education Details">
+
+        </br>
+
+
+        <label for="occupation">Occupation</label>
+        <input type="text" name="Occupation" placeholder="Enter Occupation Details">
+
+        </br>
+
+
+        <label for="income">Income Yearly</label>
+        <input type="" name="Income" placeholder="Enter Income" size="9"><br>
+
+        </br>
+
+
+        <label for="uploading photo">Upload Photo 1</label>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+
+
+            </br>
+
+
+            <label for="uploading photo">Upload Photo 2</label>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="fileToUpload" id="fileToUpload">
+                <input type="submit" value="Upload Image" name="submit">
+
+
+                </br>
+
+
+                <h1>Family Details</h1>
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+
+
+                <label for="ancestors">GrandFather Name : </label></br>
+                <input type="text" name="GrandFather" placeholder="Enter Name">
+
+                </br>
+
+
+                <label for="ancestors">GrandMother Name : </label></br>
+                <input type="text" name="GrandMother" placeholder="Enter Name">
+
+                </br>
+
+
+                <label for="ancestors">Father Name</label></br>
+                <input type="text" name="Father Name" placeholder="Enter Name">
+
+                </br>
+
+
+                <label for="details">Father Occupation : </label></br>
+                <input type="text" name="Father occupation" placeholder="required">
+                </br>
+
+
+                <label for="ancestors">Mother Name</label></br>
+                <input type="text" name="Mother Name" placeholder="Enter Name">
+
+                </br>
+
+
+                <label for="details">Mother Occupation</label></br>
+                <input type="text" name="Mother Occupation" placeholder="required">
+
+                </br>
+
+
+                <label for="siblings">No of Unmarried brothers : </label>
+                <label for="siblingsno1">1</label>
+                <input type="radio" name="siblingsno1" value="choice-1">
+                <label for="siblingsno1">2</label>
+                <input type="radio" name="siblingsno1" value="choice-2">
+                <label for="siblingsno1">3</label>
+                <input type="radio" name="siblingsno1" value="choice-3">
+                <label for="siblingsno1">4</label>
+                <input type="radio" name="siblingsno1" value="choice-4"><br>
+
+                </br>
+
+
+                <label for="siblings">No of Unmarried sisters : </label>
+                <label for="siblingsno2">1</label>
+                <input type="radio" name="siblingsno2" value="choice-1">
+                <label for="siblingsno2">2</label>
+                <input type="radio" name="siblingsno2" value="choice-2">
+                <label for="siblingsno3">3</label>
+                <input type="radio" name="siblingsno2" value="choice-3">
+                <label for="siblingsno3">4</label>
+                <input type="radio" name="siblingsno2" value="choice-4"><br>
+
+                </br>
+
+
+                <label for="siblings">No of Married brothers : </label>
+                <label for="siblingsno4">1</label>
+                <input type="radio" name="siblingsno3" value="choice-1">
+                <label for="siblingsno4">2</label>
+                <input type="radio" name="siblingsno3" value="choice-2">
+                <label for="siblingsno4">3</label>
+                <input type="radio" name="siblingsno3" value="choice-3">
+                <label for="siblingsno4">4</label>
+                <input type="radio" name="siblingsno3" value="choice-4"><br>
+
+                </br>
+
+
+                <label for="siblings">No of Married sisters : </label>
+                <label for="siblingsno">1</label>
+                <input type="radio" name="siblingsno4" value="choice-1">
+                <label for="siblingsno">2</label>
+                <input type="radio" name="siblingsno4" value="choice-2">
+                <label for="siblingsno">3</label>
+                <input type="radio" name="siblingsno4" value="choice-3">
+                <label for="siblingsno">4</label>
+                <input type="radio" name="siblingsno4" value="choice-4"><br>
+
+                </br>
+
+                <label for="status">Property status :</label><br>
+                <textarea name="message" rows="10" cols="30">EXAMPLE-One flat and a bunglow.</textarea>
+
+                </br>
+
+                <label for="residence">Residence</label>
+                <input type="text" name="Residence" placeholder="Enter Full Address">
+
+                </br>
+
+                <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
+                <h1>Contact Details </h1><br>
+                <label for="Mobileno1">Father Number </label>
+                <input type="text" name="Mobileno1" placeholder="Enter Mobile No" required><br>
+                <label for="Mobileno1">Family Number </label>
+                <input type="text" name="Mobileno1" placeholder="Enter Mobile No"><br>
+                <label for="Mobileno1">Personal Number </label>
+                <input type="text" name="Mobileno1" placeholder="Enter Mobile No" required><br>
+
+                </br>
+
+                <label for="partner preference">Partner Preference </label><br>
+                <input type="checkbox" id="preference" name="preference1" value="Businessman">
+                <label for="preference">Businessman</label><br>
+                <input type="checkbox" id="preference" name="preference2" value="Job doer">
+                <label for="preference">Job doer</label><br>
+                <input type="checkbox" id="preference" name="preference3" value="Govt Job">
+                <label for="preference">Govt Job</label><br>
+                <input type="checkbox" id="preference" name="preference4" value="Homely">
+                <label for="preference">Homely</label><br>
+                <br>
+
+                <label for="info">Personal Information :</label><br>
+                <textarea name="message" rows="10" cols="30">If any</textarea>
+                <br>
+
+                <label for="budget">Budget :</label><br>
+                <input type="radio" name="budget" value="choice-1">
+                <label for="Middleclass">Middle Class</label><br>
+                <input type="radio" name="budget" value="choice-2">
+                <label for="Umiddleclass">Upper Middle Class</label><br>
+                <input type="radio" name="budget" value="choice-3">
+                <label for="upperclass">Upper Class</label><br>
+                <input type="radio" name="budget" value="choice-4">
+                <label for="Hupperclass">Higher Upper Class</label><br>
+                <br>
+
+
+                <h1>Rate Us</h1><br>
+                <input type="radio" id="5" name="rating" value="5">
+                <label for="5">5</label><br>
+                <input type="radio" id="4" name="rating" value="4">
+                <label for="4">4</label><br>
+                <input type="radio" id="other" name="rating" value="3">
+                <label for="3">3</label><br><br>
+
+                <input type="submit" value="Submit">
+                <input type="reset"><br>
+
+                <footer>
+                    <h3>Contact Us</h3>
+                    <label>Phone Number 1-</label>
+                    <a href="Phone No :">8510077776</a><br>
+                    <label>Phone Number 2-</label>
+                    <a href="Phone No :">8130159361</a><br>
+                    <label>Phone Number 3-</label>
+                    <a href="Phone No :">9810602727</a><br>
+                    <h3>Mail Us</h3>
+                    <a href="mailto:hege@example.com">indianrishte@gmail.com</a><br><br>
+                    <h3>Visit our website</label></h3>
+                    <a href="https://www.indianrishte.com/">www.indianrishte.com</a>
+                </footer>
+            </form>
+
+
+</body>
+
+</html>
